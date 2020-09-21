@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis GuifOs</title>
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <section class="barra-inicio">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </section>
+    </header>
+    
+    <section class="gifos">
+        <a href="index.html"><img src="./assets/arrow.svg" class="flecha" id="flecha" alt="flecha para volver a la página principal"></a>
+        <div class="logos"></div>
+        <div class="logo-dia"><img src="assets/gifOF_logo.png" alt="logoDay"></div>
+        <div class="logo-noche"> <img src="assets/gifOF_logo_dark.png" alt="logoNight"></div>
+    </section>
+    
+    <section class="primer-bloque"> 
+        <a href="index-camara.html"><div class="boton-crear-guifos" id="boton-crear-guifos"><p>Crear Guifos</p></div></a>
+        <div class="boton-elegir-tema" id="boton-elegir-tema"><p>Elegir tema</p></div>
+        <div class="boton-flecha" id="boton-flecha"><img src="assets/dropdown.svg" alt="flecha que despliega el menu de temas"></div>
+        <ul class="menu" id="menu">
+            <li class="day" id="day"><span class="letra-s">S</span>ailor Day</li>
+            <li class="night" id="night">Sailor Night</li>
+        </ul>
+    </section>
+    
+    <a href="index-misgifs.html" class="hipervinculo"><div class="mis-guifos"><span class="letra-m">M</span>is Guifos </div></a>
+    <div id="contenedor-misgifs" class="contenedor-misgifs">
+    </div> 
+
+    <script src="js/script-compartido.js"></script>
+    <script src="js/script-gifs.js"></script>
+</body>
+</html>

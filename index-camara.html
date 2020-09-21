@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu GifOs</title>
+    <link rel="stylesheet" href="./styles/styles-camara.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" ></script>
+</head>
+<body>
+    <header>
+        <section class="barra-inicio">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </section>
+    </header>
+    
+    <section class="gifos">
+        <a href="index.html"><img src="./assets/arrow.svg" class="arrow" alt="flecha para volver a la página principal"></a>
+        <div class="logos"></div>
+        <div class="logo-dia"><img src="assets/gifOF_logo.png" alt="logoDay"></div>
+        <div class="logo-noche"> <img src="assets/gifOF_logo_dark.png" alt="logoNight"></div>
+        <button class="boton-dia" id="day">Sailor Day</button>
+        <button class="boton-noche" id="night">Sailor Night</button>
+    </section>
+
+    <!--instrucciones-->
+
+    <section class="crear-gifos" id="crear-gifos">
+        <div class="bloque-instrucciones" id="bloque-instrucciones">
+            <div class="barra-colores-crear" id="barra-colores-crear">Crear Guifos</div>
+            <img src="/assets/window.img.png" alt="imagen de una ventana" class="window">
+            <p class="subtitulo-crear-gifs">Aquí podrás crear tus propios guifos</p>
+            <p class="instrucciones">Crear tu <span class="palabra-guifo">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                <br> <span class="lista">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                <br> <span class="lista">2)</span> Capturar tu momento guifo
+                <br> <span class="lista">3)</span> Revisar el momento
+                <br> <span class="lista">4)</span> Listo para subir y compartir!
+                <br> ¿Quieres comenzar a crear tu <span class="palabra-guifo">guifo</span> ahora?</p>
+            <a href="index.html" ><div class="boton-cancelar" id="boton-cancelar"><p>Cancelar</p></div></a>
+            <button class="boton-comenzar" id="boton-comenzar">Comenzar</button>
+        </div>
+    </section>
+    
+    <!--creando guifos-->
+
+    <section class="grabar-guifos" id="grabar-guifos" hidden>
+        <div class="bloque-grabar" id="bloque-grabar">
+            <div class="barra-colores-chequeo" id="barra-colores-chequeo"><img src="/assets/button3.svg" alt="cruz" class="cruz">Un Chequeo Antes de Empezar</div>
+            <div class="barra-colores-captura" id="barra-colores-captura"><img src="/assets/button3.svg" alt="cruz" class="cruz">Capturando Tu Gifo</div>
+            <div class="barra-colores-vista" id="barra-colores-vista">Vista Previa</div>
+            <div class="barra-colores-subir" id="barra-colores-subir">Subiendo Guifo</div>
+
+            <div class="video-wrap" id="video-wrap">
+                <video id="video" playsinline autoplay></video>
+                <img id="img" class="img" src="">
+            </div>
+            <div class="controller">
+                <button class="boton-camara" id="boton-camara" ><img src="/assets/camera.svg" alt="camara" class="camara" ></button>
+                <button class="boton-capturar" id="boton-capturar" >Capturar</button>
+            </div>
+
+            <button class="boton-grabando" id="boton-grabando" hidden><img src="/assets/recording.svg" alt="guardando" class="recording"></button>
+            <button class="boton-frenar-grabacion" id="boton-frenar-grabacion" hidden>Listo</button>
+            <a href="index-camara.html"><div class="boton-repetir" id="boton-repetir" ><p>Repetir Captura</p></div></a>
+            <button class="boton-subir-gif" id="boton-subir-gif" hidden >Subir Guifo</button>
+            <div class="barra-tiempo" id="barra-tiempo" hidden>00:00:03:25</div>
+            <div id="fondo-blanco" class="fondo-blanco" hidden>
+                <a href="index.html"><div class="boton-cancel" id="boton-cancel" hidden><p>Cancelar</p></div></a>
+                <img src="/assets/globe_img.png" alt="imagen de un globo terraqueo" id="globo" class="globo" hidden>
+                <p class="parrafo-subir" id="parrafo-subir">Estamos subiendo tu guifo...</p>
+                <div class="barra-rosa" id= "primera-barra" hidden></div>
+                <div class="barra-rosa" hidden></div>
+                <div class="barra-rosa" hidden></div>
+                <div class="barra-rosa" hidden></div>
+                <div class="barra-rosa" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>
+                <div class="barra" hidden></div>      
+                <p class="parrafo-tiempo" id="parrafo-tiempo">Tiempo restante: <span class="años">38 años</span> algunos minutos</p>
+            </div>
+        </div>
+    </section>
+
+    <!--guif creado-->
+    <section class="mostrar-gif" id="mostrar-gif">
+        <div class="bloque-mostrar-gif" id="bloque-mostrar-gif" hidden> 
+            <div class="barra-colores-gif-subido" id="barra-colores-gif-subido">Guifo Subido Con Éxito<img src="/assets/button3.svg" alt="cruz" class="cruz"></div>
+            <div class="enmarcar-gif" id="enmarcar-gif">
+                
+            </div> 
+            <p class="parrafo-exito" id="parrafo-exito">Gif creado con éxito</p>
+            <button class="copiar-enlace" id="copiar-enlace">Copiar Enlace Guifo</button>
+            <a href="" download="" id="descarga" class="descarga"><div class="descargar-gif" id="descargar-gif"><p>Descargar Guifo</p></div></a>
+            <a href="index.html"><div class="boton-finalizar" id="boton-finalizar"><p>Listo</p></div></a>
+        </div>
+    </section>
+    
+    <section class="mis-guifs" id="mis-guifs">
+        <div id="ultimo-bloque" hidden>
+            <div class="cuadrado-blanco-guifos">
+                <p class="parrafo-mis-guifos"> Mis guifos </p>
+            </div>
+            <div id="contenedor-misgifs" class="contenedor-misgifs"></div>
+        </div> 
+    </section>
+    <script src= "js/script-camara.js"></script>
+    <script src="js/script-compartido.js"></script>
+    
+</body>
+</html>

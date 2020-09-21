@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Galería GifOs</title>
+        <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
+        <link href="index-camara.html" rel="import" />
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <section class="barra-inicio">
+                <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+            </section>
+        </header>
+        
+        <section class="gifos">
+            <div class="logos"></div>
+            <div class="logo-dia"><img src="assets/gifOF_logo.png" alt="logoDay"></div>
+            <div class="logo-noche"> <img src="assets/gifOF_logo_dark.png" alt="logoNight"></div>
+        </section>
+        
+        <section class="primer-bloque"> 
+            <a href="index-camara.html"><div class="boton-crear-guifos" id="boton-crear-guifos"><p>Crear Guifos</p></div></a>
+            <div class="boton-elegir-tema" id="boton-elegir-tema"><p>Elegir tema</p></div>
+            <div class="boton-flecha" id="boton-flecha"><img src="assets/dropdown.svg" alt="flecha que despliega el menu de temas"></div>
+            <ul class="menu" id="menu">
+                <li class="day" id="day"><span class="letra-s">S</span>ailor Day</li>
+                <li class="night" id="night">Sailor Night</li>
+            </ul>
+        </section>
+        
+        <a href="index-misgifs.html" class="hipervinculo"><div class="mis-guifos"><span class="letra-m">M</span>is Guifos </div></a>
+        
+        <section class="buscador">
+            <div class="segundo-bloque">
+                <div class="cuadrado-contenedor-busquedas">
+                    <p class="barra-color-buscar">Buscar</p>
+                    <div class="cuadrado-blanco-busquedas">
+                        <input type="text" class="search" id="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras..." >
+                    </div> 
+                    <input type="button" value="Buscar" class="boton-buscar"  id="boton-buscar">
+                    <img src="assets/CombinedShape.svg" alt="lupa gris" class="lupa-gris" id="lupa-gris">
+                    <img src="assets/lupa.svg" alt="lupa negra" class="lupa-negra" id="lupa-negra" hidden>  
+                    <img src="assets/lupa_light.svg" alt="lupa blanca" class="lupa-blanca" id="lupa-blanca">
+                </div>
+                <div class="contenedor-busqueda-similar" id="contenedor-busqueda-similar" hidden >
+                    <div class="busqueda-similar1">Adorables gatitos</div>
+                    <div class="busqueda-similar2"> Reite con Will Ferrel</div>
+                    <div class="busqueda-similar3">Encontrá los mejores gifs de Los Simpsons</div>
+                </div>
+                <div class="botones-busquedas" id="botones-busquedas">
+                </div>
+            </div>
+        </section>
+        
+        <section class="busquedas" id="busquedas"></section>
+        
+        <section class="sugerencias" id="sugerencias">
+            <div class="cuadrado-blanco-sugerencias">
+                <p class="parrafo-sugerencias"> Hoy te sugerimos: </p>
+            </div> 
+        </section>
+
+        <section class="barra-colores-sugerencias" id="barra-colores-sugerencias"></section>
+        
+        <section class="contenedor-sugerencias" id="contenedor-sugerencias"></section>
+        
+        <section class="tendencias" id="tendencias">
+            <div class="cuadrado-blanco-tendencias">
+                <p class="parrafo-tendencias"> Tendencias:</p>
+            </div>
+        </section>
+        
+        <section class= "contenedor-tendencias" id="contenedor-tendencias"></section>
+
+        <script src="js/script.js"></script>
+        <script src="js/script-compartido.js"></script>
+    </body>
+</html>
