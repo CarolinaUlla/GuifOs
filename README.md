@@ -1,7 +1,6 @@
 # guifOs
-Segundo proyecto realizado en el curso Desarrollo Web Full Stack en Acamica.
-Manejo de HTML, CSS, SCSS y Javascript.
+Second project developed for the Acamica Full Stack Web Development course. Handling of HTML, CSS, SCSS and Javascript.
 
-Desarrollo de un catálogo de GIFs que cuenta con funcionalidad de búsqueda, interacción con una API externa y captura de video.
+Development of a GIF catalog that has search functionality, interaction with an external API and video capture.
 
-DOMINIO: https://carolinaulla.github.io/guifOs/
+URL: https://carolinaulla.github.io/guifOs/
